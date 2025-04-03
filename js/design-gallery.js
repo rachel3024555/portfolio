@@ -20,23 +20,23 @@ const projects = {
         category: "packaging"
     },
     graphic1: {
-        image: "images/design/graphic1/main.jpg",
+        image: "images/design/Graphic1/main.jpg",
         category: "graphic"
     },
     graphic2: {
-        image: "images/design/graphic2/main.jpg",
+        image: "images/design/Graphic2/main.jpg",
         category: "graphic"
     },
     graphic3: {
-        image: "images/design/graphic3/main.jpg",
+        image: "images/design/Graphic3/main.jpg",
         category: "graphic"
     },
     graphic4: {
-        image: "images/design/graphic4/main.jpg",
+        image: "images/design/Graphic4/main.jpg",
         category: "graphic"
     },
     graphic5: {
-        image: "images/design/graphic5/main.jpg",
+        image: "images/design/Graphic5/main.jpg",
         category: "graphic"
     }
     // 可以继续添加更多项目...
