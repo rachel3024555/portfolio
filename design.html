@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design - My Creative World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Site Logo" class="logo">
+        </a>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="illustrations.html" class="nav-button">Illustrations</a>
+        <a href="design.html" class="nav-button">Design</a>
+        <a href="about.html" class="nav-button">About Me</a>
+    </nav>
+
+    <!-- 添加分類選單 -->
+    <div class="category-nav">
+        <button class="category-button active" data-category="all">All</button>
+        <button class="category-button" data-category="product">Product Design</button>
+        <button class="category-button" data-category="packaging">Packaging Design</button>
+        <button class="category-button" data-category="graphic">Graphic Design</button>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <!-- 產品設計 -->
+            <div class="gallery-item" data-category="product" onclick="openModal('product1')">
+                <img src="images/thumbnails/product/product1-thumb.jpg" alt="Product Design 1" class="gallery-thumbnail">
+            </div>
+            
+            <div class="gallery-item" data-category="product" onclick="openModal('product2')">
+                <img src="images/thumbnails/product/product2-thumb.jpg" alt="Product Design 2" class="gallery-thumbnail">
+            </div>
+            
+            <!-- 平面設計 -->
+            <div class="gallery-item" data-category="graphic" onclick="openModal('graphic1')">
+                <img src="images/thumbnails/graphic/graphic1-thumb.jpg" alt="Graphic Design 1" class="gallery-thumbnail">
+            </div>
+
+            <!-- 包裝設計 -->
+            <div class="gallery-item" data-category="packaging" onclick="openModal('packaging1')">
+                <img src="images/thumbnails/packaging/packaging1-thumb.jpg" alt="Packaging Design 1" class="gallery-thumbnail">
+            </div>
+
+           
+            <!-- 平面設計 -->
+            <div class="gallery-item" data-category="graphic" onclick="openModal('graphic2')">
+                <img src="images/thumbnails/graphic/graphic2-thumb.jpg" alt="Graphic Design 2" class="gallery-thumbnail">
+            </div>
+
+            <!-- 產品設計 -->
+            <div class="gallery-item" data-category="product" onclick="openModal('product3')">
+                <img src="images/thumbnails/product/product3-thumb.jpg" alt="Product Design 3" class="gallery-thumbnail">
+            </div>
+
+            <!-- 平面設計 -->
+            <div class="gallery-item" data-category="graphic" onclick="openModal('graphic3')">
+                <img src="images/thumbnails/graphic/graphic3-thumb.jpg" alt="Graphic Design 3" class="gallery-thumbnail">
+            </div>
+             <!-- 平面設計 -->
+             <div class="gallery-item" data-category="graphic" onclick="openModal('graphic4')">
+                <img src="images/thumbnails/graphic/graphic4-thumb.jpg" alt="Graphic Design 4" class="gallery-thumbnail">
+            </div>
+             <!-- 包裝設計 -->
+             <div class="gallery-item" data-category="packaging" onclick="openModal('packaging2')">
+                <img src="images/thumbnails/packaging/packaging2-thumb.jpg" alt="Packaging Design 2" class="gallery-thumbnail">
+            </div>
+            <!-- 平面設計 -->
+            <div class="gallery-item" data-category="graphic" onclick="openModal('graphic5')">
+                <img src="images/thumbnails/graphic/graphic5-thumb.jpg" alt="Graphic Design 5" class="gallery-thumbnail">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Template -->
+    <div id="modal" class="modal">
+        <button class="close-button" onclick="closeModal()">×</button>
+        <div class="modal-content">
+            <img id="modal-image" class="modal-image">
+        </div>
+    </div>
+
+    <script src="js/design-gallery.js"></script>
+</body>
+</html> 

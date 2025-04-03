@@ -1,0 +1,187 @@
+.about-container {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+}
+
+.about-intro {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #8b6b4f;
+    margin-bottom: 1.5rem;
+}
+
+.intro-text {
+    line-height: 1.6;
+}
+
+.intro-text p {
+    margin-bottom: 1rem;
+}
+
+.about-section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #8b6b4f;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f5e6d3;
+}
+
+.timeline, .awards, .publications {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li, .awards li, .publications li {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    position: relative;
+    line-height: 1.4;
+}
+
+.timeline li::before,
+.awards li::before,
+.publications li::before {
+    display: none;
+}
+
+.timeline li span:first-child,
+.awards li span:first-child,
+.publications li span:first-child {
+    color: #8b6b4f;
+    margin-right: 0.5rem;
+}
+
+.media-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.media-link {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #8b6b4f;
+    background-color: #f1e1b0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.media-link:hover {
+    background-color: #8b6b4f;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .media-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 聯名商品合作區塊 */
+.collaboration {
+    margin-top: -2rem;  /* 調整與簡介的間距 */
+}
+
+.collaboration-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.collab-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    text-decoration: none;
+    background-color: #f1e1b0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.collab-button:hover {
+    background-color: #8b6b4f;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(139, 107, 79, 0.2);
+}
+
+.collab-title {
+    color: #8b6b4f;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.collab-desc {
+    color: #5a5a5a;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.collab-button:hover .collab-title,
+.collab-button:hover .collab-desc {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .collaboration-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 添加長方形 LOGO 的樣式 */
+.footer-logo {
+    max-width: 800px;
+    margin: 4rem auto 2rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.logo-rectangle {
+    max-width: 300px;  /* 可以根據實際 LOGO 調整寬度 */
+    height: auto;
+    opacity: 0.8;  /* 讓 LOGO 看起來柔和一些 */
+    transition: opacity 0.3s ease;
+}
+
+.logo-rectangle:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        margin: 3rem auto 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .logo-rectangle {
+        max-width: 200px;  /* 移動端縮小尺寸 */
+    }
+} 

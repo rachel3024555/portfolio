@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            // 禁用 Ctrl+S, Ctrl+U, Ctrl+Shift+I
+            if ((e.ctrlKey && e.keyCode == 83) || 
+                (e.ctrlKey && e.keyCode == 85) || 
+                (e.ctrlKey && e.shiftKey && e.keyCode == 73)) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Site Logo" class="logo">
+        </a>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="illustrations.html" class="nav-button">Illustrations</a>
+        <a href="design.html" class="nav-button">Design</a>
+        <a href="about.html" class="nav-button">About Me</a>
+    </nav>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <img src="images/work1.jpg" alt="Featured Work 1" class="carousel-item">
+            <img src="images/work2.jpg" alt="Featured Work 2" class="carousel-item">
+            <img src="images/work3.jpg" alt="Featured Work 3" class="carousel-item">
+        </div>
+        <button class="carousel-button carousel-prev">←</button>
+        <button class="carousel-button carousel-next">→</button>
+    </div>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/dustfishlee" class="social-button">Facebook</a>
+            <a href="https://www.instagram.com/dust_fish_/" class="social-button">Instagram</a>
+            <a href="mailto:dustfish0815@gmail.com" class="social-button">Email</a>
+        </div>
+        <p>&copy; 2024 My Creative World. All rights reserved.</p>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+</body>
+</html> 

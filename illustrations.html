@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustrations - My Creative World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Site Logo" class="logo">
+        </a>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="illustrations.html" class="nav-button">Illustrations</a>
+        <a href="design.html" class="nav-button">Design</a>
+        <a href="about.html" class="nav-button">About Me</a>
+    </nav>
+
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openModal('project1')">
+                <img src="images/thumbnails/project1-thumb.jpg" alt="Project 1" class="gallery-thumbnail">
+            </div>
+            <div class="gallery-item" onclick="openModal('project2')">
+                <img src="images/thumbnails/project2-thumb.jpg" alt="Project 2" class="gallery-thumbnail">
+            </div>
+            <div class="gallery-item" onclick="openModal('project3')">
+                <img src="images/thumbnails/project3-thumb.jpg" alt="Project 3" class="gallery-thumbnail">
+            </div>
+            <div class="gallery-item" onclick="openModal('project4')">
+                <img src="images/thumbnails/project4-thumb.jpg" alt="Project 4" class="gallery-thumbnail">
+            </div>
+            <div class="gallery-item" onclick="openModal('project5')">
+                <img src="images/thumbnails/project5-thumb.jpg" alt="Project 5" class="gallery-thumbnail">
+            </div>
+            <div class="gallery-item" onclick="openModal('project6')">
+                <img src="images/thumbnails/project6-thumb.jpg" alt="Project 6" class="gallery-thumbnail">
+            </div>
+            <div class="gallery-item" onclick="openModal('project7')">
+                <img src="images/thumbnails/project7-thumb.jpg" alt="Project 7" class="gallery-thumbnail">
+            </div>
+            <div class="gallery-item" onclick="openModal('project8')">
+                <img src="images/thumbnails/project8-thumb.jpg" alt="Project 7" class="gallery-thumbnail">
+            </div><!-- 可以继续添加更多项目 -->
+        </div>
+    </div>
+
+    <!-- Modal Template -->
+    <div id="modal" class="modal">
+        <button class="close-button" onclick="closeModal()">×</button>
+        <div class="modal-content">
+            <img id="modal-image" class="modal-image">
+        </div>
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html> 
