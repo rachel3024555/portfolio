@@ -1,1 +1,20 @@
- 
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "scripts": {
+    "start": "http-server .",
+    "build": "echo 'No build step needed'"
+  },
+  "keywords": [
+    "portfolio",
+    "illustration",
+    "design",
+    "art"
+  ],
+  "author": "Dust Fish",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+} 
